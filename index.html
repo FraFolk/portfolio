@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv= "X-UA-Compatible" content= "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Francesca Folkmer Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!---font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!---favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!---icons-->
+    <script src="https://kit.fontawesome.com/aec50919ea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+<!------ header ------->
+<div id=header>
+    <div class="navbar">
+        <nav>
+            <a href="#home" class="logo">folk<em>.</em></a>
+            <ul id="sidemenu">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contact">Contact me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+
+<!-----home----->
+<div id="home" style="background-image: url(assets/img/background2.png)";>
+    <div class="container">
+        <div class="home-text">
+            <h1> Nice to see you!</h1>
+            <p>👋 Hi! I’m Francesca, a UX/UI Designer based in Milan.
+                <br>
+                I love diving into why and how people use things, 
+                and furthering those experiences to make them memorable.
+            </p>
+            <button type="button"> <a href="#contact">Contact me</a></button>
+        </div>
+    </div>
+</div>
+
+
+<!----------------about------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/img/about.png" alt="profile">
+            </div>
+            <div class="about-col-2">
+                <h1 id="title">About me.</h1>
+                <p>👩🎨 I have always been in love with the world of art and design.
+                    <br> I graduated in Set Design, and after three years of 
+                    working in this industry, I decided to get back into the game. 
+                    I joined start2impact and enrolled on the path of UX/UI Design.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li></li><i class="fa-solid fa-pen-nib icoskill"></i>Brand Identity</li>
+                        <li><i class="fa-solid fa-magnifying-glass icoskill"></i>User Research </li>
+                        <li><i class="fa-solid fa-desktop icoskill"></i>Wireframing and Prototyping</li>
+                        <li></li> <i class="fa-solid fa-pen-ruler icoskill"></i>Design System </li>
+                        <li></li><i class="fa-solid fa-user-check icoskill"></i>User Test</li>
+                        <li></li><i class="fa-brands fa-html5 icoskill"></i>HTML</li>
+                        <li></li><i class="fa-brands fa-css3-alt icoskill"></i>CSS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>SET 2018 - DEC 2021</span><br>Art Director and Set Designer for Colibrì12</li>
+                        <li><span>OCT 2020 - FEB 2021</span><br>Art Director for Hovo Faber Studio</li>
+                        <li><span>GEN 2019 - GEN 2020</span><br>Set Designer Freelencer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - CURRENT</span><br>UX/UI Design - Start2impact University</li>
+                        <li><span>2015 - 2019</span><br>Set Design - NABA Nuova Accademia delle Belle Arti</li>
+                        <li><span>2010 - 2015</span><br>Liceo scientifico - Leonardo Da Vinci</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!---Portfolio--->
+<div id="portfolio">
+    <div class="container">
+        <div class="portfolio-text">
+            <h1 class="title">Portfolio</h1>
+            <p>Here you can find all my project. More coming soon!</p>
+        </div>
+
+        <div class="portfolio-content">
+            <div class="box">
+                <a href="https://www.behance.net/gallery/148752263/Docly/modules/840225257" rel="noopener" target="_blank">
+                <img src="assets/img/cover_docly.png" alt="Docly project">
+            </a>
+                <h2>Docly</h2>
+                <p>Team project for the BigHack2022 contest</p>
+            </div>
+
+            <div class="box">
+                <a href="XXX" rel="noopener" target="_blank">
+                <img src="assets/img/cover_sunnee.png" alt="Sunnee project">
+            </a>
+                <h2>Sunnee</h2>
+                <p>Brand image for a costume shop</p>
+            </div>
+
+            <div class="box">
+                <a href="XXX" rel="noopener" target="_blank">
+                <img src="assets/img/comingsoon.png" alt="Coming Soon">
+            </a>
+                <h2>New Project</h2>
+                <p>Work in progress</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!---- Daily UI ---->
+<div class="container" id="dailyui">
+    <div class="dailyui-text">
+        <h1> Daily UI</h1>
+        <p> Some time ago I decided to stretch my design muscles 💪 
+            Thus I started 100 Daily UI challenge!
+            <br> This is my journey up to now.</p>
+    </div>
+    <div class="container1">
+        <div class="carousel1">
+            <img class="item" src="assets/img/dailyui9.png">
+            <img class="item" src="assets/img/dailyui6.png">
+            <img class="item" src="assets/img/dailyui5.png">
+            <img class="item" src="assets/img/dailyui4.png">
+            <img class="item" src="assets/img/dailyui3.png">
+            <img class="item" src="assets/img/dailyui2.png">
+            <img class="item" src="assets/img/dailyui1.png">
+        </div>
+    </div>
+    <div class="indication-test">
+        <h5>Scroll right-left to see all</h5>
+    </div>
+
+</div>
+
+
+<!---Contatti--->
+<div id="contact" style="background-image: url(assets/img/background.png)";>
+    <div class="container">
+        <div class="contact-text">
+            <h1>Let's connect</h1>
+            <p> If you are interested about my works or 
+                you want to know more about me, 
+                you can find me here:
+            </p>
+        </div>
+        <div class="social">
+            <a href="mailto:folkmer.design@gmail.com" rel="noopener" target="_blank">
+                <i class="fa-solid fa-paper-plane"></i>
+            </a>    
+            <a href="https://github.com/FraFolk" rel="noopener" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/francescafolkmer/" rel="noopener" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.behance.net/francesfolkmer" rel="noopener" target="_blank">
+                <i class="fa-brands fa-square-behance"></i>
+            </a>
+        </div>
+        <div class="cv">
+            <button type="button"> <a href="assets/pdf/CV_Folkmer_UX_UI.pdf" download="CV_Folkmer_UX/UI">Download CV</a></button>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!---footer--->
+<div class="footer">
+    <p>Copyright © 2022 Francesca Folkmer. All Rights Reserved</p>
+</div>
+
+
+<!---js--->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){  
+        for(tablink of tablinks){ 
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){ 
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+</body>
+</html>
